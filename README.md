@@ -15,4 +15,5 @@ No se envía contenido de las páginas a ningún servicio: el texto se procesa l
 
 - `content.js`: identifica el contenido principal, genera un clon seguro para leer y aplica las pistas visuales sin alterar la página original.
 - `popup.*`: interruptor y preferencias, almacenadas con `chrome.storage.sync`.
+- `icons/`: identidad visual de la extensión en las resoluciones requeridas por Edge.
 - `manifest.json`: configuración de Edge/Chromium Manifest V3.
