@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="popup.css">
+    <title>Lector TDAH</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="mark" aria-hidden="true">Aa</span>
+        <div><h1>Lector TDAH</h1><p>Lectura enfocada, a tu ritmo.</p></div>
+      </header>
+
+      <button id="toggle" class="primary" type="button">Activar modo lector</button>
+
+      <section aria-labelledby="cues-label">
+        <label id="cues-label" for="letters">Letras a resaltar <output id="letters-value">3</output></label>
+        <input id="letters" type="range" min="1" max="5" value="3">
+      </section>
+
+      <label class="switch-row" for="large-text">
+        <span><strong>Texto amplio</strong><small>Mejora la legibilidad</small></span>
+        <input id="large-text" type="checkbox">
+      </label>
+      <label class="switch-row" for="focus-line">
+        <span><strong>Guía de lectura</strong><small>Resalta el párrafo activo</small></span>
+        <input id="focus-line" type="checkbox">
+      </label>
+      <p id="status" role="status"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
