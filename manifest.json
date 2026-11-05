@@ -1,9 +1,11 @@
 {
   "manifest_version": 3,
   "name": "Lector TDAH",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Modo lector con pistas visuales al inicio de cada palabra.",
-  "permissions": ["storage", "activeTab"],
+  "permissions": [
+    "storage"
+  ],
   "action": {
     "default_title": "Abrir Lector TDAH",
     "default_popup": "popup.html",
@@ -22,8 +24,13 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://*/*", "https://*/*"],
-      "js": ["content.js"],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
   ]

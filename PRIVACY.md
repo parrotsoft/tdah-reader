@@ -47,10 +47,9 @@ La extensión **no**:
 | Permiso | Uso |
 |---|---|
 | `storage` | Guardar tus preferencias de lectura (`chrome.storage.sync`). |
-| `activeTab` | Acceso temporal a la pestaña activa **solo cuando haces clic en el icono** de la extensión, para leer el estado del modo lector y activarlo o desactivarlo. Se revoca automáticamente al cerrar la pestaña o dejar de usar la extensión. |
-| Host (`http://*/*`, `https://*/*`) | Inyectar el script de contenido en la página que estás leyendo para aplicar el modo lector. No implica envío de datos. |
+| Host (`http://*/*`, `https://*/*`) | Inyectar el script de contenido en la página que estás leyendo para aplicar el modo lector. Este script se comunica con el popup para activar o desactivar el lector en la pestaña activa. No implica envío de datos. |
 
-No se solicitan permisos adicionales (no hay `tabs`, `cookies`, `webRequest`, acceso a formularios ni a datos de navegación).
+No se solicitan permisos adicionales (no hay `tabs`, `activeTab`, `cookies`, `webRequest`, acceso a formularios ni a datos de navegación).
 
 ---
 

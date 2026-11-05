@@ -67,7 +67,7 @@ rm -f "$ZIP_PATH"
 (
   cd "$ROOT_DIR"
   zip -q -X "$ZIP_PATH" \
-    manifest.json content.js popup.html popup.css \
+    manifest.json content.js popup.html popup.css popup.js \
     icons/icon-16.png icons/icon-32.png icons/icon-48.png icons/icon-128.png
 )
 
